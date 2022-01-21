@@ -66,7 +66,7 @@ export default function Home() {
         borderStyle={"solid"}
         boxShadow={useColorModeValue("8px 8px black", "8px 8px white")}
         overflow={"auto"}
-        className={styles.quill}
+        // className={styles.quill}
       >
         <Editor
           init={{
