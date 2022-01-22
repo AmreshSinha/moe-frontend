@@ -8,6 +8,9 @@ const Paste = ({data}) => {
   // console.log(data)
   return (
     <>
+    <Head>
+      <title>{data.name}</title>
+    </Head>
       <Navbar />
       <Container
         color={useColorModeValue("black", "white")}
@@ -21,16 +24,16 @@ const Paste = ({data}) => {
         boxShadow={useColorModeValue("8px 8px black", "8px 8px white")}
         overflow={"auto"}
       >
-      <Interweave content={data} />
-        {data}
+      <Interweave content={data.body} />
       </Container>
     </>
   );
 };
 
 Paste.getInitialProps = async (paste) => {
-  const json = paste.query.data.body;
-  return{data: json}
+  const body = paste.query.data.body;
+  const name = paste.query.data.name;
+  return{data: {name: name, body: body} }
 }
 
 export default Paste;

@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "node ssr-server.js",
     "build": "next build",
-    "start": "node ssr-server.js",
+    "start": "NODE_ENV=production node ssr-server.js",
     "lint": "next lint"
   },
   "dependencies": {

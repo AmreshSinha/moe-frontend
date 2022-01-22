@@ -1,4 +1,5 @@
 import {
+  Link,
   Text,
   Flex,
   Box,
@@ -68,16 +69,17 @@ export default function Navbar() {
             > */}
             {/* <Image src={Rocket} width="10px" height="10px" /> */}
             {/* </Flex> */}
-            <Text
+            <Link
               textAlign={useBreakpointValue({ base: "center", md: "left" })}
               fontSize={"3rem"}
               padding={0}
-              lineHeight={1}
+              lineHeight={0.5}
               fontFamily={"Dongle"}
               color={useColorModeValue("gray.700", "white")}
+              href="/"
             >
               moe
-            </Text>
+            </Link>
           </Flex>
 
           {/* Second Part => Lightmode/Darkmode Toggle Button */}
