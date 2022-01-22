@@ -2,9 +2,9 @@
   "name": "moe-frontend",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node ssr-server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "node ssr-server.js",
     "lint": "next lint"
   },
   "dependencies": {
@@ -12,8 +12,11 @@
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@tinymce/tinymce-react": "^3.13.0",
+    "axios": "^0.25.0",
     "copy-webpack-plugin": "^10.2.1",
+    "express": "^4.17.2",
     "framer-motion": "^5.6.0",
+    "interweave": "^12.9.0",
     "next": "12.0.8",
     "react": "17.0.2",
     "react-dom": "17.0.2",
