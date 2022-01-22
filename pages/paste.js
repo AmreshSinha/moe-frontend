@@ -5,7 +5,6 @@ import Interweave from 'interweave';
 
 const Paste = ({data}) => {
 
-  // console.log(data)
   return (
     <>
     <Head>
