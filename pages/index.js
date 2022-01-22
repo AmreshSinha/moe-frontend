@@ -4,8 +4,6 @@ import styles from "../styles/Home.module.css";
 import Navbar from "../components/navbar";
 import dynamic from "next/dynamic";
 import { useState, useEffect } from "react";
-// const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
-// import "react-quill/dist/quill.snow.css";
 import {
   Text,
   Flex,
@@ -41,7 +39,6 @@ import { Editor } from "@tinymce/tinymce-react";
 export default function Home() {
   const [contentEditor, setContentEditor] = useState("");
   const handleEditorChange = (content, editor) => {
-    // console.log("Content was updated:", content);
     setContentEditor(content);
   };
 
@@ -67,8 +64,6 @@ export default function Home() {
   // Name Input Box
   const [input, setInput] = useState("");
 
-  // let uploadUrl = `${window.location.origin}/upload/paste?name=${input}&content=${contentEditor}`
-
   return (
     <>
       <Navbar />
@@ -84,7 +79,6 @@ export default function Home() {
           borderStyle={"solid"}
           boxShadow={useColorModeValue("8px 8px black", "8px 8px white")}
           overflow={"auto"}
-          // className={styles.quill}
         >
           <Editor
             init={{
@@ -160,7 +154,6 @@ export default function Home() {
         >
           <Button
             borderRadius={"4px"}
-            // rounded={"0"}
             backgroundColor={useColorModeValue("white", "black")}
             color={useColorModeValue("black", "white")}
             border={"2px"}
@@ -176,7 +169,6 @@ export default function Home() {
               color: useColorModeValue("white", "black"),
             }}
             disabled={!input || !contentEditor}
-            // onClick={this.uploadPaste}
             type="submit"
             value="submit"
           >
@@ -184,7 +176,6 @@ export default function Home() {
           </Button>
         </Container>
       </form>
-      {/* {contentEditor} */}
     </>
   );
 }
