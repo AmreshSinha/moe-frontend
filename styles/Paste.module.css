@@ -36,6 +36,10 @@
     font-size: 2rem;
 }
 
+.interweave pre {
+    margin: 1rem 0 1rem 0;
+}
+
 .interweave code {
     border: 1px solid #ccc;
     padding: 5px;
