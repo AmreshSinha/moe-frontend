@@ -1,5 +1,6 @@
 {
   "name": "moe-frontend",
+  "author": "Amresh Prasad Sinha",
   "private": true,
   "scripts": {
     "dev": "node ssr-server.js",
