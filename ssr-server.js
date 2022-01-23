@@ -40,7 +40,7 @@ server.post('/upload/paste', (req, res) => {
     
   server.listen(PORT, (err) => {
     if (err) throw err
-    console.log('> Ready on http://localhost:3000')
+    console.log(`> Ready on http://localhost:${PORT}`)
   })
 })
 .catch((ex) => {
