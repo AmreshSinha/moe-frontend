@@ -67,6 +67,12 @@ export default function Home() {
   return (
     <>
       <Head>
+        <title>Moe - Just Another Paste Service!</title>
+        <meta property="og:title" content="Moe - Just Another Paste Service!" key="title" />
+        <meta propert="og:title" content="/images/Logo.png" />
+        <meta name="description" content="Moe is a Paste Service build on Next.js, Express and Chakra UI" />
+        <meta name="keywords" content="Paste, Pastebin" />
+        <meta name="author" content="Amresh Prasad Sinha" />
         <link rel="shortcut icon" href="images/favicon.ico" />
       </Head>
       <Navbar />
