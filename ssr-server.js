@@ -4,6 +4,7 @@ const api = require('./lib/api.js')
 const bodyParser = require("body-parser");
 
 const dev = process.env.NODE_ENV !== 'production'
+const PORT = process.env.PORT || 3000
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
@@ -37,7 +38,7 @@ server.post('/upload/paste', (req, res) => {
     return handle(req, res)
   })
     
-  server.listen(3000, (err) => {
+  server.listen(PORT, (err) => {
     if (err) throw err
     console.log('> Ready on http://localhost:3000')
   })
