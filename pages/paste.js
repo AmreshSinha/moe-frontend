@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "../components/navbar";
+import styles from "../styles/Paste.module.css";
 import { Container, useColorModeValue } from "@chakra-ui/react";
 import Interweave from 'interweave';
 
@@ -23,7 +24,7 @@ const Paste = ({data}) => {
         boxShadow={useColorModeValue("8px 8px black", "8px 8px white")}
         overflow={"auto"}
       >
-      <Interweave content={data.body} />
+      <Interweave className={styles.interweave} content={data.body} />
       </Container>
     </>
   );
