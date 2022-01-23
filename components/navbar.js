@@ -13,9 +13,9 @@ import {
 import Head from "next/head";
 import Image from "next/image";
 import { FaMoon, FaSun } from "react-icons/bs";
-import Moon from "../public/moon.png";
-import Sun from "../public/sun.png";
-import Rocket from "../public/icons8-rocket-96.png";
+import Moon from "../public/images/moon.png";
+import Sun from "../public/images/sun.png";
+import Rocket from "../public/images/icons8-rocket-96.png";
 
 const FaMoonYellow = () => {
   return <Image src={Moon} width="24px" height="24px" />;

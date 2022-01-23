@@ -66,6 +66,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <link rel="shortcut icon" href="images/favicon.ico" />
+      </Head>
       <Navbar />
       <form action="/upload/paste" method="post">
         <Container
@@ -103,7 +106,13 @@ export default function Home() {
             value={contentEditor}
             onEditorChange={handleEditorChange}
           />
-          <Textarea display="none" id="body" name="body" value={contentEditor} readOnly/>
+          <Textarea
+            display="none"
+            id="body"
+            name="body"
+            value={contentEditor}
+            readOnly
+          />
         </Container>
         <Container
           mt={"2.5rem"}
