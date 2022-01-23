@@ -72,11 +72,16 @@ export default function Navbar() {
             <Link
               textAlign={useBreakpointValue({ base: "center", md: "left" })}
               fontSize={"3rem"}
-              padding={0}
+              paddingX={2}
+              paddingY={2}
+              rounded={5}
               lineHeight={0.5}
               fontFamily={"Dongle"}
               color={useColorModeValue("gray.700", "white")}
               href="/"
+              _hover={{
+                backgroundColor: useColorModeValue("gray.100", "gray.700")
+              }}
             >
               moe
             </Link>
@@ -85,12 +90,11 @@ export default function Navbar() {
           {/* Second Part => Lightmode/Darkmode Toggle Button */}
           <IconButton
             size="md"
-            fontsize="lg"
             variant="ghost"
             color="current"
             onClick={toggleColorMode}
             icon={<SwitchIcon />}
-            aria-Label={"Switch to ${text} mode"}
+            aria-label={`Switch to ${text} mode`}
           />
         </Flex>
       </Box>

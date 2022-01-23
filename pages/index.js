@@ -67,7 +67,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <form action="/upload/paste">
+      <form action="/upload/paste" method="post">
         <Container
           color={useColorModeValue("black", "white")}
           mt={"2.5rem"}
@@ -103,7 +103,7 @@ export default function Home() {
             value={contentEditor}
             onEditorChange={handleEditorChange}
           />
-          <Textarea display="none" id="body" name="body" value={contentEditor}/>
+          <Textarea display="none" id="body" name="body" value={contentEditor} readOnly/>
         </Container>
         <Container
           mt={"2.5rem"}
