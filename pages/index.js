@@ -78,14 +78,14 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://paste.fossian.com/" />
         <meta property="og:title" content="Moe - Just Another Paste Service!" />
-        <meta property="og:description" content="Moe - Just Another Paste Service!" key="title" />
+        <meta property="og:description" content="Moe - Just Another Paste Service!" />
         <meta propert="og:image" content="//moe-frontend-production.up.railway.app/images/Logo.png" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://paste.fossian.com/" />
         <meta property="twitter:title" content="Moe - Just Another Paste Service!" />
-        <meta property="twitter:description" content="Moe - Just Another Paste Service!" key="title" />
+        <meta property="twitter:description" content="Moe - Just Another Paste Service!" />
         <meta propert="twitter:image" content="//moe-frontend-production.up.railway.app/images/Logo.png" />
       </Head>
       <Navbar />
