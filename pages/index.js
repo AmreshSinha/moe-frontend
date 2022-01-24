@@ -67,26 +67,22 @@ export default function Home() {
   return (
     <>
       <Head>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://paste.fossian.com/" />
+        <meta property="og:title" content="Moe - Just Another Paste Service!" />
+        <meta property="og:description" content="Moe - Just Another Paste Service!" />
+        <meta propert="og:image" content="//moe-frontend-production.up.railway.app/images/Logo.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://paste.fossian.com/" />
+        <meta property="twitter:title" content="Moe - Just Another Paste Service!" />
+        <meta property="twitter:description" content="Moe - Just Another Paste Service!" />
+        <meta propert="twitter:image" content="//moe-frontend-production.up.railway.app/images/Logo.png" />
         <title>Moe - Just Another Paste Service!</title>
         <meta name="title" content="Moe - Just Another Paste Service!" />
         <meta name="description" content="Moe is a Paste Service build on Next.js, Express and Chakra UI" />
         <meta name="keywords" content="Paste, Pastebin" />
         <meta name="author" content="Amresh Sinha" />
         <link rel="shortcut icon" href="images/favicon.ico" />
-
-        {/* Open Graph Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://paste.fossian.com/" />
-        <meta property="og:title" content="Moe - Just Another Paste Service!" />
-        <meta property="og:description" content="Moe - Just Another Paste Service!" />
-        <meta propert="og:image" content="//moe-frontend-production.up.railway.app/images/Logo.png" />
-
-        {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://paste.fossian.com/" />
-        <meta property="twitter:title" content="Moe - Just Another Paste Service!" />
-        <meta property="twitter:description" content="Moe - Just Another Paste Service!" />
-        <meta propert="twitter:image" content="//moe-frontend-production.up.railway.app/images/Logo.png" />
       </Head>
       <Navbar />
       <form action="/upload/paste" method="post">
