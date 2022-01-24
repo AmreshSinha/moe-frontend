@@ -68,12 +68,25 @@ export default function Home() {
     <>
       <Head>
         <title>Moe - Just Another Paste Service!</title>
-        <meta property="og:title" content="Moe - Just Another Paste Service!" key="title" />
-        <meta propert="og:title" content="/images/Logo.png" />
+        <meta name="title" content="Moe - Just Another Paste Service!" />
         <meta name="description" content="Moe is a Paste Service build on Next.js, Express and Chakra UI" />
         <meta name="keywords" content="Paste, Pastebin" />
-        <meta name="author" content="Amresh Prasad Sinha" />
+        <meta name="author" content="Amresh Sinha" />
         <link rel="shortcut icon" href="images/favicon.ico" />
+
+        {/* Open Graph Facebook */}
+        <meta property="og:type" content="website"></meta>
+        <meta property="og:url" content="https://paste.fossian.com/"></meta>
+        <meta property="og:title" content="Moe - Just Another Paste Service!"></meta>
+        <meta property="og:description" content="Moe - Just Another Paste Service!" key="title" />
+        <meta propert="og:image" content="/images/Logo.png" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image"></meta>
+        <meta property="twitter:url" content="https://paste.fossian.com/"></meta>
+        <meta property="twitter:title" content="Moe - Just Another Paste Service!"></meta>
+        <meta property="twitter:description" content="Moe - Just Another Paste Service!" key="title" />
+        <meta propert="twitter:image" content="/images/Logo.png" />
       </Head>
       <Navbar />
       <form action="/upload/paste" method="post">
