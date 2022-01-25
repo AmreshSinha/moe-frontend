@@ -17,7 +17,7 @@ app.prepare()
 server.get('/:id', (req, res) => {
     api.getPaste(req.params.id).then(response => {
       const actualPage = '/paste'
-      const paste = { data: response.data}
+      const paste = { data: response.data, hostname: req.hostname, port: PORT}
       app.render(req, res, actualPage, paste)
     }) .catch(error => {
       app.render(req, res, '/_error')
