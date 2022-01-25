@@ -182,6 +182,7 @@ export default function Home() {
             color={useColorModeValue("black", "white")}
             border={"2px"}
             borderStyle={"solid"}
+            borderColor={useColorModeValue("black", "white")}
             boxShadow={useColorModeValue("5px 5px black", "5px 5px white")}
             fontWeight={400}
             _hover={{ boxShadow: "none" }}
